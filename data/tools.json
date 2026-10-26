@@ -1,0 +1,274 @@
+{
+  "keyword": "canva mcp",
+  "title": "Canva MCP Alternatives: 7 Design MCP Servers for Claude (2026)",
+  "lastChecked": "2026-10-26",
+  "capabilityChecks": [
+    {
+      "key": "mcpServer",
+      "label": "MCP server"
+    },
+    {
+      "key": "listedInAnthropicSDirectory",
+      "label": "Listed in Anthropic's directory"
+    },
+    {
+      "key": "generatesImages",
+      "label": "Generates images"
+    },
+    {
+      "key": "editsExistingDesigns",
+      "label": "Edits existing designs"
+    },
+    {
+      "key": "fillsTemplatesWithData",
+      "label": "Fills templates with data"
+    },
+    {
+      "key": "batchInOneCall",
+      "label": "Batch in one call"
+    },
+    {
+      "key": "freePlan",
+      "label": "Free plan"
+    }
+  ],
+  "tools": [
+    {
+      "n": 1,
+      "name": "Wireflow",
+      "tagline": "Best overall for generating on-brand images and video from an agent",
+      "homepage": "https://www.wireflow.ai/",
+      "docs": "https://www.wireflow.ai/docs/api/overview",
+      "pricing": "https://www.wireflow.ai/pricing",
+      "claudeConnection": "Custom connector, OAuth sign-in",
+      "restApi": true,
+      "modelSupport": "100+ image, video and audio models as nodes",
+      "freeTier": "unverified",
+      "repo": null,
+      "note": "Not listed in Anthropic's connector directory; added as a custom connector by URL (checked 2026-10-11).",
+      "quickstart": [
+        {
+          "label": "Add the Wireflow connector to Claude Code, from the wireflowINC/skills README. Then run /mcp to sign in.",
+          "lang": "bash",
+          "code": "claude mcp add --transport http wireflow https://www.wireflow.ai/api/mcp"
+        }
+      ],
+      "moneyPage": "https://www.wireflow.ai/ai-workflow-builder",
+      "moneyPageLabel": "Wireflow AI workflow builder page",
+      "capabilities": {
+        "mcpServer": true,
+        "listedInAnthropicSDirectory": false,
+        "generatesImages": true,
+        "editsExistingDesigns": true,
+        "fillsTemplatesWithData": true,
+        "batchInOneCall": true,
+        "freePlan": null
+      },
+      "live": {
+        "stars": null,
+        "lastPush": null,
+        "latestRelease": null,
+        "latestReleaseDate": null,
+        "checkedAt": null
+      }
+    },
+    {
+      "n": 2,
+      "name": "Adobe for Claude",
+      "tagline": "Best for editing photos, video and designs with Adobe apps from Claude",
+      "homepage": "https://www.adobe.com/adobe-connectors/adobe-for-claude.html",
+      "docs": null,
+      "pricing": null,
+      "claudeConnection": "Directory connector, 67 tools",
+      "restApi": null,
+      "modelSupport": null,
+      "freeTier": "unverified",
+      "repo": null,
+      "note": "Many tools work without signing in; some need an eligible paid Adobe plan (checked 2026-10-11).",
+      "quickstart": [
+        {
+          "label": "The Adobe connector URL, from the Adobe listing in Anthropic's connector directory. Adobe's own setup is to add Adobe for Claude from Plugins in Claude, connect it on the Connectors tab, then type /adobe in a new conversation.",
+          "lang": "text",
+          "code": "https://adobe-creativity.adobe.io/mcp"
+        }
+      ],
+      "capabilities": {
+        "mcpServer": true,
+        "listedInAnthropicSDirectory": true,
+        "generatesImages": true,
+        "editsExistingDesigns": true,
+        "fillsTemplatesWithData": null,
+        "batchInOneCall": true,
+        "freePlan": true
+      },
+      "live": {
+        "stars": null,
+        "lastPush": null,
+        "latestRelease": null,
+        "latestReleaseDate": null,
+        "checkedAt": null
+      }
+    },
+    {
+      "n": 3,
+      "name": "Figma",
+      "tagline": "Best for agents that read and write Figma files",
+      "homepage": "https://www.figma.com/",
+      "docs": "https://developers.figma.com/docs/figma-mcp-server/tools-and-prompts/",
+      "pricing": "https://www.figma.com/pricing",
+      "claudeConnection": "Directory connector, remote MCP",
+      "restApi": null,
+      "modelSupport": null,
+      "freeTier": "yes",
+      "repo": null,
+      "note": "Writing to files through MCP needs a Full seat and edit permission; Dev seats are read-only (checked 2026-10-11).",
+      "quickstart": [
+        {
+          "label": "Add Figma's remote MCP server to Claude Code, from Figma's remote server installation guide.",
+          "lang": "bash",
+          "code": "claude mcp add --transport http figma https://mcp.figma.com/mcp"
+        }
+      ],
+      "capabilities": {
+        "mcpServer": true,
+        "listedInAnthropicSDirectory": true,
+        "generatesImages": true,
+        "editsExistingDesigns": true,
+        "fillsTemplatesWithData": null,
+        "batchInOneCall": true,
+        "freePlan": true
+      },
+      "live": {
+        "stars": null,
+        "lastPush": null,
+        "latestRelease": null,
+        "latestReleaseDate": null,
+        "checkedAt": null
+      }
+    },
+    {
+      "n": 4,
+      "name": "Bannerbear",
+      "tagline": "Best for images and videos rendered from branded templates",
+      "homepage": "https://www.bannerbear.com/",
+      "docs": null,
+      "pricing": "https://www.bannerbear.com/pricing/",
+      "claudeConnection": "MCP connection",
+      "restApi": true,
+      "modelSupport": null,
+      "freeTier": "unverified",
+      "repo": null,
+      "note": "The free trial has 30 API credits and no card. A trial is not listed here as a free tier.",
+      "quickstart": null,
+      "capabilities": {
+        "mcpServer": true,
+        "listedInAnthropicSDirectory": null,
+        "generatesImages": true,
+        "editsExistingDesigns": null,
+        "fillsTemplatesWithData": true,
+        "batchInOneCall": true,
+        "freePlan": null
+      },
+      "live": {
+        "stars": null,
+        "lastPush": null,
+        "latestRelease": null,
+        "latestReleaseDate": null,
+        "checkedAt": null
+      }
+    },
+    {
+      "n": 5,
+      "name": "Placid",
+      "tagline": "Best for branded visuals filled from data",
+      "homepage": "https://placid.app/",
+      "docs": null,
+      "pricing": "https://placid.app/pricing",
+      "claudeConnection": "MCP for templates",
+      "restApi": true,
+      "modelSupport": null,
+      "freeTier": "unverified",
+      "repo": null,
+      "note": "The free trial has a few complimentary credits and no card. A trial is not listed here as a free tier.",
+      "quickstart": null,
+      "capabilities": {
+        "mcpServer": true,
+        "listedInAnthropicSDirectory": null,
+        "generatesImages": true,
+        "editsExistingDesigns": null,
+        "fillsTemplatesWithData": true,
+        "batchInOneCall": null,
+        "freePlan": null
+      },
+      "live": {
+        "stars": null,
+        "lastPush": null,
+        "latestRelease": null,
+        "latestReleaseDate": null,
+        "checkedAt": null
+      }
+    },
+    {
+      "n": 6,
+      "name": "Orshot",
+      "tagline": "Best for bulk renders from spreadsheet rows",
+      "homepage": "https://orshot.com/",
+      "docs": null,
+      "pricing": "https://orshot.com/pricing",
+      "claudeConnection": "MCP server",
+      "restApi": true,
+      "modelSupport": null,
+      "freeTier": "yes",
+      "repo": null,
+      "note": null,
+      "quickstart": null,
+      "capabilities": {
+        "mcpServer": true,
+        "listedInAnthropicSDirectory": null,
+        "generatesImages": true,
+        "editsExistingDesigns": null,
+        "fillsTemplatesWithData": true,
+        "batchInOneCall": null,
+        "freePlan": true
+      },
+      "live": {
+        "stars": null,
+        "lastPush": null,
+        "latestRelease": null,
+        "latestReleaseDate": null,
+        "checkedAt": null
+      }
+    },
+    {
+      "n": 7,
+      "name": "Cloudinary",
+      "tagline": "Best for managing and transforming media assets from an agent",
+      "homepage": "https://cloudinary.com/",
+      "docs": null,
+      "pricing": "https://cloudinary.com/pricing",
+      "claudeConnection": "Five remote MCP servers, OAuth",
+      "restApi": true,
+      "modelSupport": null,
+      "freeTier": "yes",
+      "repo": null,
+      "note": "Image generation through the Asset Management MCP server needs the Image Generation add-on (checked 2026-10-11).",
+      "quickstart": null,
+      "capabilities": {
+        "mcpServer": true,
+        "listedInAnthropicSDirectory": null,
+        "generatesImages": true,
+        "editsExistingDesigns": true,
+        "fillsTemplatesWithData": null,
+        "batchInOneCall": null,
+        "freePlan": true
+      },
+      "live": {
+        "stars": null,
+        "lastPush": null,
+        "latestRelease": null,
+        "latestReleaseDate": null,
+        "checkedAt": null
+      }
+    }
+  ]
+}
